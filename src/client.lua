@@ -59,8 +59,9 @@ local function GetStreetNames()
 
     local streetName = GetStreetNameFromHashKey(streetNameHash)
     local crossingName = GetStreetNameFromHashKey(crossingHash)
+    
     if (streetName and crossingName ~= '') then
-        return (streetName .. ' x ' .. crossingName)
+        return ('%s x %s'):format(streetName, crossingName)
     else
         return streetName
     end
@@ -85,4 +86,5 @@ CreateThread(function()
             Wait(1000)
         end
     end
+
 end)
