@@ -1,4 +1,5 @@
 local isPlayerInVehicle = false
+local Config = lib.load('shared.Config')
 
 function ToggleCompass(toggle)
     SendNuiMessage(json.encode({
@@ -87,4 +88,5 @@ CreateThread(function()
     end
 
 end)
+
 
