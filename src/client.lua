@@ -70,7 +70,6 @@ end
 CreateThread(function()
     while true do
         if (isPlayerInVehicle) then
-            local ped = cache.ped
             local compassDirection = GetCompassDirection()
             local streetName = GetStreetNames()
             local areaName = GetNameOfArea()
@@ -88,3 +87,4 @@ CreateThread(function()
     end
 
 end)
+
